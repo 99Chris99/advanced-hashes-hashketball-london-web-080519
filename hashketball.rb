@@ -304,3 +304,38 @@ return longest_name
 
 end
 #player_with_longest_name
+
+def long_name_steals_a_ton
+
+longest_name = player_with_longest_name
+
+
+steals_scored = 0
+best_player = ""
+result = false
+
+  game_hash.each do |hom_awy, vals1|
+    vals1[:players].each do |players|
+      players.each do |name, attri|
+          current_name = name
+          current_points = players[name][:steals]
+
+          if players[name][:steals] > steals_scored
+          steals_scored = current_points
+          best_player = current_name
+          end
+
+end
+end
+      end
+
+if best_player == longest_name
+
+  result = true
+end
+
+return result
+
+end
+
+#long_name_steals_a_ton
