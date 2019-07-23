@@ -193,7 +193,9 @@ big_foot_rebounds = 0
     vals1[:players].each do |players|
       players.each do |name, attri|
         attri.each do |attname, result|
-          puts attname
+
+          puts game_hash[vals1][attri][:shoe]
+
         end
       end
     end
