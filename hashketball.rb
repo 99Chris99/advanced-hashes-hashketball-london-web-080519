@@ -257,7 +257,7 @@ if game_hash.[:home][:team_name] == "Brooklyn Nets"
   end
 
   return brooklyn_points
-  
+
 end
 
 most_points_scored
