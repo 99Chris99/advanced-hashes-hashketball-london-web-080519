@@ -116,7 +116,7 @@ def player_numbers
       if game_hash[hom_awy][:team_name] == input_name
 
       vals1[:players].each do |players|
-        #puts players
+      #  puts players
       players.each do |name, attribute|
           #puts name
           #puts attribute
@@ -126,8 +126,9 @@ def player_numbers
         end
       end
     end
+  end
     end
-    end
+  end
      #puts "This is the output #{output_result}."
-     p output_result
+     return output_result
     end
