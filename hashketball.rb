@@ -53,7 +53,7 @@ def num_points_scored(name)
 
 points = "Not found"
 
-game_hash.each do |hom_awy, vals1| 
+game_hash.each do |hom_awy, vals1|
   vals1[:players].each do |players, pvals|
     pvals.each do |name, attribute|
 
@@ -66,4 +66,3 @@ end
 
 
 end
-
