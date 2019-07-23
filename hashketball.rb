@@ -242,14 +242,15 @@ end
 
 def winning_team
 
-brooklyn_points = 0
-charlotte_points = 0
+home_points = 0
+away_points = 0
+winner = ""
 
 
 game_hash[:home][:players].each do |players|
       players.each do |name, attri|
           current_points = players[name][:points]
-          brooklyn_points += current_points
+          home_points += current_points
       end
 
 current_points = 0
@@ -257,12 +258,18 @@ current_points = 0
 game_hash[:away][:players].each do |players|
       players.each do |name, attri|
             current_points = players[name][:points]
-            charlotte_points += current_points
+            away_points += current_points
       end
     end
+  end
 
+if home_points > away_points
+  winner = game_hash[:home][:team_name]
+else
+  winner = game_hash[:away][:team_name]
+end
 
-  return charlotte_points
+return winner
 
 end
 
