@@ -106,10 +106,10 @@ end
     end
 
 
-def player_numbers
+def player_numbers(team_name)
 
-    input_name = "Charlotte Hornets"
-    output_result = "Not found"
+    input_name = team_name
+    output_result = []
     search = :number
 
     game_hash.each do |hom_awy, vals1|
@@ -122,7 +122,7 @@ def player_numbers
           #puts attribute
       attribute.each do |attname, result|
         if attname == search
-          output_result = result
+          output_result.push(result)
         end
       end
     end
