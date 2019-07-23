@@ -79,19 +79,41 @@ def team_colors(team_name)
 input_name = team_name
 output_result = "Not found"
 
-
-
 game_hash.each do |hom_awy, vals1|
-
 
   vals1.each do |vals2, vals3|
 
     if vals3 == input_name
     output_result = game_hash[hom_awy][:colors]
-
     end
 end
 end
  return output_result
+end
+
+
+
+
+def team_names
+
+  output_result = []
+
+
+  
+  game_hash.each do |hom_awy, vals1|
+    game_hash[:team_name].each do |name|
+    puts name
+
+    
+  #  vals1.each do |vals2, vals3|
+#puts vals2[:team_name]
+
+#output_result = output_result.
+#push(vals3)
 
 end
+end
+
+      #return output_result
+    end
+  
