@@ -189,7 +189,7 @@ def big_shoe_rebounds
 shoe_size = 0
 big_foot_rebounds = 0
 
-  game_hash.each do |hom_awy, vals1|  
+  game_hash.each do |hom_awy, vals1|
     vals1[:players].each do |players|
       players.each do |name, attri|
           current_rebound = players[name][:rebounds]
