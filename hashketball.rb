@@ -49,9 +49,9 @@ end
 
 
 
-def num_points_scored
+def num_points_scored(input_name)
 
-  input_name = "Bismack Biyombo"
+  #input_name = "Bismack Biyombo"
 
 output_result = "Not found"
 
@@ -82,6 +82,6 @@ game_hash.each do |hom_awy, vals1|
 end
 end
 end
- puts "This is the output #{output_result}."
-
+ #puts "This is the output #{output_result}."
+ return output_result
 end
