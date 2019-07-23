@@ -237,5 +237,5 @@ name = ""
       end
     end
   end
-return big_foot_rebounds
+return name
 end
