@@ -12,7 +12,7 @@ game_hash = {
     {"Manson Plumlee"=>{:number=>1,:shoe=>19,:points=>26,:rebounds=>11,:assists=>6,:steals=>3,:blocks=>8,:slam_dunks=>5}},
     {"Jason Terry"=>{:number=>31,:shoe=>15,:points=>19,:rebounds=>2,:assists=>2,:steals=>4,:blocks=>11,:slam_dunks=>1}}
                           ]
-            }
+            },
   :away => {
         :team_name => "Charlotte Hornets",
         :colors    => ["Turquoise", "Purple"],
