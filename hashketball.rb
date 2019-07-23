@@ -49,16 +49,25 @@ end
 
 
 
-def num_points_scored(name)
+def num_points_scored
 
 points = "Not found"
 
+search = :points
+
 game_hash.each do |hom_awy, vals1|
-  vals1[:players].each do |players, pvals|
-    pvals.each do |name, attribute|
+  vals1[:players].each do |players|
+    #puts players
+
+  players.each do |name, attribute|
 
       puts name
-      puts attribute
+      #puts attribute
+  name[search].each do |result|
+    puts result
+  end
+
+  
 
 end
 end
