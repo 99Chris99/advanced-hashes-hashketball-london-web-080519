@@ -159,9 +159,9 @@ def player_numbers(team_name)
      return output_result
     end
 
-    def player_stats
+    def player_stats(name)
 
-    input_name = "Ben Gordon"
+    input_name = name
     output_result = "Not found"
     search = :points
 
