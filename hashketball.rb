@@ -49,9 +49,9 @@ end
 
 
 
-def num_points_scored
+def num_points_scored(input_name)
 
-points = "Not found"
+output_result = "Not found"
 
 search = :points
 
@@ -63,8 +63,16 @@ game_hash.each do |hom_awy, vals1|
 
       puts name
       #puts attribute
-  name[search].each do |result|
-    puts result
+  attribute.each do |attname, result|
+
+    if name == input_name && attname == search
+
+      output_result = result
+
+    end
+      
+
+    
   end
 
 
@@ -72,6 +80,6 @@ game_hash.each do |hom_awy, vals1|
 end
 end
 end
-
+ puts output_result
 
 end
