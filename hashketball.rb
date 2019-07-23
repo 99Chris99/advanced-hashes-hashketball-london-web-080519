@@ -49,9 +49,9 @@ end
 
 
 
-def num_points_scored(input_name)
+def num_points_scored(player_name)
 
-  #input_name = "Bismack Biyombo"
+  input_name = player_name
 
 output_result = "Not found"
 
