@@ -104,3 +104,30 @@ def team_names
 end
   return output_result
     end
+
+
+def player_numbers
+
+    input_name = "Charlotte Hornets"
+    output_result = "Not found"
+    search = :number
+
+    game_hash.each do |hom_awy, vals1|
+      if game_hash[hom_awy][:team_name] == input_name
+
+      vals1[:players].each do |players|
+        #puts players
+      players.each do |name, attribute|
+          #puts name
+          #puts attribute
+      attribute.each do |attname, result|
+        if attname == search
+          output_result = result
+        end
+      end
+    end
+    end
+    end
+     #puts "This is the output #{output_result}."
+     p output_result
+    end
