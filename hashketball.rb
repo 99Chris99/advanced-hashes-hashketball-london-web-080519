@@ -245,19 +245,23 @@ def winning_team
 brooklyn_points = 0
 charlotte_points = 0
 
-if game_hash.[:home][:team_name] == "Brooklyn Nets"
+#if game_hash.[:home][:team_name] == "Brooklyn Nets"
 
-  game_hash.each do |hom_awy, vals1|
-    vals1[:players].each do |players|
+#  game_hash[:home].each do |hom_awy, vals1|
+#puts hom_awy
+
+    #vals1[:players].each do |players|
+
+game_hash[:home][:players].each do |players|
       players.each do |name, attri|
           current_points = players[name][:points]
           brooklyn_points += current_points
       end
     end
-  end
-
+#  end
+#end
   return brooklyn_points
 
 end
 
-most_points_scored
+winning_team
