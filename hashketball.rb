@@ -73,6 +73,32 @@ end
  p output_result
 end
 
+def num_points_scored(player_name)
+
+input_name = player_name
+output_result = "Not found"
+search = :shoe
+
+game_hash.each do |hom_awy, vals1|
+  vals1[:players].each do |players|
+    #puts players
+  players.each do |name, attribute|
+      #puts name
+      #puts attribute
+  attribute.each do |attname, result|
+    if attname == search && name == input_name
+      output_result = result
+    end
+  end
+end
+end
+end
+ #puts "This is the output #{output_result}."
+ p output_result
+end
+
+
+
 
 def team_colors(team_name)
 
