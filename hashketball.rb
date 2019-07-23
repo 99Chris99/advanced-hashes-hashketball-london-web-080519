@@ -78,9 +78,6 @@ def team_colors
 
 input_name = "Charlotte Hornets"
 output_result = "Not found"
-search = :points
-home_or_away = nil
-
 
 
 
@@ -90,27 +87,11 @@ game_hash.each do |hom_awy, vals1|
   vals1.each do |vals2, vals3|
 
     if vals3 == input_name
+    output_result = game_hash[hom_awy][:colors]
 
-    puts "here"
-    puts vals3
-    puts "to here"
-    home_or_away = game_hash[hom_awy][vals1]
-
-  end
-#    if team_name == "Charlotte Hornets"
-#    puts team_name
-#  end
-  #players.each do |name, attribute|
-      #puts name
-      #puts attribute
-  #attribute.each do |attname, result|
-    #if attname == search && name == input_name
-    #  output_result = result
     end
-  #end
-#end
-#end
 end
- #puts "This is the output #{output_result}."
- p "Final output - > #{home_or_away}"
+end
+ puts output_result
+
 end
