@@ -182,3 +182,24 @@ def player_numbers(team_name)
      #puts "This is the output #{output_result}."
      return output_result
     end
+
+
+def big_shoe_rebounds
+
+shoe_size = 0
+big_foot_rebounds = 0
+
+  game_hash.each do |hom_awy, vals1|
+    vals1[:players].each do |players|
+      players.each do |name, attri|
+        attri.each do |attname, result|
+          puts attname
+        end
+      end
+    end
+  end
+
+end
+          
+
+
