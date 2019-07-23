@@ -182,4 +182,3 @@ def player_numbers(team_name)
      #puts "This is the output #{output_result}."
      return output_result
     end
-
