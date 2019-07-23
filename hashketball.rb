@@ -74,9 +74,9 @@ end
 end
 
 
-def team_colors
+def team_colors(team_name)
 
-input_name = "Charlotte Hornets"
+input_name = team_name
 output_result = "Not found"
 
 
