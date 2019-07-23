@@ -210,3 +210,32 @@ big_foot_rebounds = 0
   end
 return big_foot_rebounds
 end
+
+
+
+def most_points_scored
+
+points_scored = 0
+name = ""
+
+  game_hash.each do |hom_awy, vals1|
+    vals1[:players].each do |players|
+      players.each do |name, attri|
+          current_name = players[name]
+          current_points = players[name][:points]
+          
+          if players[name][:points] > points_scored
+            points_scored = current_points
+            name = current_name
+          end
+
+        #attri.each do |attname, result|
+
+        #  puts game_hash[vals1][:players]#[players][attri]]
+
+        #end
+      end
+    end
+  end
+return big_foot_rebounds
+end
