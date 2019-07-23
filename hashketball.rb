@@ -51,34 +51,21 @@ end
 
 def num_points_scored(player_name)
 
-  input_name = player_name
-
+input_name = player_name
 output_result = "Not found"
-
 search = :points
 
 game_hash.each do |hom_awy, vals1|
   vals1[:players].each do |players|
     #puts players
-
   players.each do |name, attribute|
-
       #puts name
       #puts attribute
   attribute.each do |attname, result|
-
     if attname == search && name == input_name
-
       output_result = result
-
     end
-
-
-
   end
-
-
-
 end
 end
 end
