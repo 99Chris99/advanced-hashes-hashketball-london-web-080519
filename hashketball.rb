@@ -99,12 +99,12 @@ def team_names
   output_result = []
 
 
-  
+
   game_hash.each do |hom_awy, vals1|
     game_hash[:team_name].each do |name|
     puts name
 
-    
+
   #  vals1.each do |vals2, vals3|
 #puts vals2[:team_name]
 
@@ -116,4 +116,3 @@ end
 
       #return output_result
     end
-  
