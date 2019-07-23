@@ -158,3 +158,28 @@ def player_numbers(team_name)
      #puts "This is the output #{output_result}."
      return output_result
     end
+
+    def player_stats
+
+    input_name = "Ben Gordon"
+    output_result = "Not found"
+    search = :points
+
+    game_hash.each do |hom_awy, vals1|
+      vals1[:players].each do |players|
+        #puts players
+      players.each do |name, attribute|
+          #puts name
+          #puts attribute
+      attribute.each do |attname, result|
+        if name == input_name
+          output_result = attribute
+        end
+      end
+    end
+    end
+    end
+     #puts "This is the output #{output_result}."
+     return output_result
+    end
+
