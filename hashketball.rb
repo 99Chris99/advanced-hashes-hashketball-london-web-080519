@@ -92,6 +92,6 @@ game_hash.each do |hom_awy, vals1|
     end
 end
 end
- puts output_result
+ return output_result
 
 end
