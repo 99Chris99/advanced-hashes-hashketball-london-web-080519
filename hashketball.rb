@@ -194,9 +194,9 @@ big_foot_rebounds = 0
       players.each do |name, attri|
           current_rebound = players[name][:rebounds]
           current_shoe = players[name][:shoe]
-          puts current_rebound
+          
           if players[name][:shoe] > shoe_size
-            shoe_size = current_shoe#players[name][:shoe]
+            shoe_size = current_shoe
             big_foot_rebounds = current_rebound
           end
 
