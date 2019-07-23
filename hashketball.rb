@@ -200,6 +200,3 @@ big_foot_rebounds = 0
   end
 
 end
-          
-
-
