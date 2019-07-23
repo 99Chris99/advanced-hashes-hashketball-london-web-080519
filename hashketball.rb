@@ -73,7 +73,7 @@ end
  p output_result
 end
 
-def num_points_scored(player_name)
+def shoe_size(player_name)
 
 input_name = player_name
 output_result = "Not found"
