@@ -275,3 +275,32 @@ end
 return winner
 
 end
+
+def player_with_longest_name
+
+name_length = 0
+longest_name = ""
+current_name_length = 0
+
+
+game_hash.each do |hom_awy, vals1|
+  vals1[:players].each do |players|
+
+      players.each do |name, attri|
+        current_name_length = name.length
+        current_name = name
+
+      if current_name_length > name_length
+        longest_name = current_name
+        name_length = current_name_length
+      end
+
+
+      end
+end
+end
+#puts name_length
+return longest_name
+
+end
+#player_with_longest_name
