@@ -253,7 +253,7 @@ game_hash[:home][:players].each do |players|
       end
 
 current_points = 0
-    
+
 game_hash[:away][:players].each do |players|
       players.each do |name, attri|
             current_points = players[name][:points]
