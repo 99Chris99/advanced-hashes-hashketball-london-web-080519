@@ -189,16 +189,24 @@ def big_shoe_rebounds
 shoe_size = 0
 big_foot_rebounds = 0
 
-  game_hash.each do |hom_awy, vals1|
+  game_hash.each do |hom_awy, vals1|  
     vals1[:players].each do |players|
       players.each do |name, attri|
-        attri.each do |attname, result|
+          current_rebound = players[name][:rebounds]
+          current_shoe = players[name][:shoe]
+          puts current_rebound
+          if players[name][:shoe] > shoe_size
+            shoe_size = current_shoe#players[name][:shoe]
+            big_foot_rebounds = current_rebound
+          end
 
-          puts game_hash[vals1][attri][:shoe]
+        #attri.each do |attname, result|
 
-        end
+        #  puts game_hash[vals1][:players]#[players][attri]]
+
+        #end
       end
     end
   end
-
+return big_foot_rebounds
 end
