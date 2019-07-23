@@ -70,9 +70,9 @@ game_hash.each do |hom_awy, vals1|
       output_result = result
 
     end
-      
 
-    
+
+
   end
 
 
